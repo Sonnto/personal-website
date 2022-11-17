@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+html {
+  box-sizing: border-box;
+  background-color: #fcf7f8;
+  font-family: Karla;
+  color: #423e37;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* HOME */
+
+.home-container {
+  margin: 2em 0em;
+}
+
+ul {
+  background-color: #cbc6c7;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.my-title,
+.subtext,
+.social-icons {
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 2em;
+}
+
+/* ABOUT */
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border: 0.5px solid rgba(66, 62, 55, 0.5);
+  border-radius: 40px;
+}
+
+/* RESUME */
+
+/* PROJECTS */
+
+/* LINKS */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #423e37;
+}
+
+a:visited {
+  color: #423e37;
+}
+
+a:hover {
+  color: #423e37;
+}
+
+a:active {
+  color: #423e37;
+}
