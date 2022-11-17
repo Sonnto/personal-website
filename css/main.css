@@ -6,6 +6,8 @@ html {
   font-family: Karla;
   color: #423e37;
   margin: 0;
+  font-size: 16px;
+  padding: 0;
 }
 
 *,
@@ -14,27 +16,62 @@ html {
   box-sizing: inherit;
 }
 
-/* HOME */
+/* NAV BAR */
 
-.home-container {
-  margin: 2em 0em;
+section {
+  margin: 2em 1em;
 }
 
-ul {
+#nav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+#nav ul {
   background-color: #cbc6c7;
   list-style: none;
   margin: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.my-title,
-.subtext,
-.social-icons {
+  padding: 0;
   text-align: center;
 }
 
+#nav li {
+  display: inline;
+  font-size: 30px;
+}
+
+/* HOME */
+
+#home {
+  text-align: center;
+  margin-top: 6em;
+  padding: 0;
+  /* line-height: 3em; */
+}
+
+.emblem {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
+
+.subtext {
+  font-size: 24px;
+}
+
+.subtext {
+  /* line-height: 0.75em; */
+}
+
 .social-icons {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 /* ABOUT */
@@ -45,6 +82,10 @@ ul {
   overflow: hidden;
   border: 0.5px solid rgba(66, 62, 55, 0.5);
   border-radius: 40px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 /* RESUME */
