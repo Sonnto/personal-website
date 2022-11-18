@@ -3,7 +3,7 @@
 html {
   box-sizing: border-box;
   background-color: #fbf9ff;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   color: #423e37;
   margin: 0;
   padding: 0;
@@ -75,28 +75,26 @@ section {
 }
 
 .emblem {
-  width: 400px; /* 25em */
-  height: 400px; /* 25em */
+  max-width: 200px; /* 12.5em */
+  max-height: 200px; /* 12.5em */
   overflow: hidden;
 }
 
 .my-title {
-  font-size: 4.5em; /* 72px */
+  font-size: 2.25em; /* 36px */
   margin: 0;
 }
 
 .subtext {
-  font-size: 1.5em; /* 24px */
-  margin-top: 1em;
-}
-
-.subtext p {
-  margin-top: -10px;
-  margin-bottom: 18px;
+  font-size: 1em; /* 16px */
+  line-height: 0.25em;
 }
 
 .social-icons {
-  font-size: 3em;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 /* ==== ABOUT ==== */
@@ -124,7 +122,7 @@ section {
 
 .projects-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   text-align: center;
   gap: 1.5em;
 }
@@ -137,8 +135,8 @@ section {
 .project-card-item {
   border: 1px black solid;
   flex: 1 0 0;
-  width: 600px;
-  height: 400px;
+  width: 240px;
+  height: 190px;
   background: #fcf7f8;
   border: 0.5px solid rgba(66, 62, 55, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -146,7 +144,7 @@ section {
 }
 
 .project-card-item i {
-  font-size: 2em; /* 32px */
+  font-size: 1em; /* 32px */
 }
 
 h3 {
@@ -179,3 +177,27 @@ a:hover {
 a:active {
   color: #423e37;
 }
+
+/* FOR WEB
+.projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  gap: 1.5em;
+}
+
+#projects .section-heading {
+  flex: 2 0 100%;
+  margin-top: 0;
+}
+
+.project-card-item {
+  border: 1px black solid;
+  flex: 1 0 0;
+  width: 600px;
+  height: 400px;
+  background: #fcf7f8;
+  border: 0.5px solid rgba(66, 62, 55, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+} */
