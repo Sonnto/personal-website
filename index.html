@@ -26,11 +26,18 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li class="spacer"></li>
+          <!-- <li class="spacer"></li> UNCOMMENT FOR WEB-->
           <!--<li><img class="emblem" src="#" alt="emblem shrunk to nav" /></li> -->
           <li><a href="#resume">Résumé</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
+        <a
+          href="javascript:void(0);"
+          class="hamburger-menu"
+          onclick="expandMenu()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </nav>
     </header>
     <!--HOME-->
@@ -105,17 +112,18 @@
       <h2 class="section-heading">Projects</h2>
       <!--Project 1-->
       <div class="project-card-item">
-        <img
-          class="project-preview"
-          src="images/tales-of-Kinis-Sonnto-project-preview.png"
-          alt='Previews of text-adventure game "Sonnto: A Star Wars Tale"'
-        />
+        <div class="project-preview">
+          <img
+            src="images/tales-of-Kinis-Sonnto-project-preview.png"
+            alt='Previews of text-adventure game "Sonnto: A Star Wars Tale"'
+          />
+        </div>
         <h3 class="project-name">Sonnto: A Star Wars Tale</h3>
         <p class="project-description">
           A text adventure game following an original and fictional Star Wars
           character. The game is built with JavaScript. The story will be
           continuously updated when and if time permits. This was a project
-          built in the Web Development programme at Humber College.
+          built in 2022 during the Web Development programme at Humber College.
         </p>
         <a href="https://github.com/Sonnto/tales-of-kinis-sonnto.git"
           ><i class="fa-brands fa-square-github"></i
@@ -123,10 +131,14 @@
       </div>
       <!--Project 2-->
       <div class="project-card-item">
-        <img class="project-preview" src="#" alt="image alt text" />
-        <h3 class="project-name">Project Name</h3>
-        <p class="project-description">Project description</p>
-        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        <div class="project-preview">
+          <img src="#" alt="image alt text" />
+        </div>
+        <div>
+          <h3 class="project-name">Project Name</h3>
+          <p class="project-description">Project description</p>
+          <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </div>
       </div>
     </section>
   </body>

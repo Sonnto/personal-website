@@ -40,40 +40,6 @@ section {
   position: fixed;
   top: 0%;
   width: 100%;
-}
-
-#nav li {
-  margin: 0em 1em;
-}
-
-#nav .spacer {
-  width: 8em;
-  display: inline-block;
-}
-
-#nav a {
-  display: inline;
-  text-align: center;
-  text-decoration: none;
-}
-
-#nav a:link {
-  color: #423e37;
-}
-
-#nav a:visited {
-  color: #3581b8;
-}
-
-#nav a:hover {
-  color: #3581b8;
-}
-
-#nav a:active {
-  color: #3581b8;
-}
-
-#nav ul {
   background-color: #cdcbcd;
   list-style: none;
   margin: 0;
@@ -82,9 +48,14 @@ section {
   text-align: center;
 }
 
+#nav ul {
+  padding: 0;
+}
+
 #nav li {
   display: inline;
   font-size: 1.875em; /* 30px */
+  margin: 0em 1em;
 }
 
 /* ==== HOME ==== */
@@ -129,7 +100,7 @@ section {
   height: 150px; /* 9.375em */
   overflow: hidden;
   border: 0.5px solid rgba(66, 62, 55, 0.5);
-  border-radius: 2.5em /* 40px */;
+  border-radius: 40px;
 }
 
 #about p {
@@ -167,7 +138,6 @@ section {
 }
 
 /* PROJECT ITEM CARDS */
-
 .project-card-item {
   border: 1px black solid;
   /* flex: 1 0 0; */
@@ -176,6 +146,10 @@ section {
   border: 0.5px solid rgba(66, 62, 55, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-name {
@@ -184,10 +158,19 @@ section {
 }
 
 .project-preview {
-  width: 220px;
+  /* width: 220px;
   height: 100px;
   border: 1px solid rgba(66, 62, 55, 0.5);
-  border-radius: 15px;
+  border-radius: 15px; */
+  margin: 0.5em;
+  overflow: hidden;
+}
+
+.project-preview img {
+  max-width: 250px;
+  max-height: 180px;
+  border: 1px solid rgba(66, 62, 55, 0.5);
+  border-radius: 20px;
   margin: 0.5em;
 }
 
@@ -198,7 +181,7 @@ section {
 
 .project-card-item i {
   font-size: 1.25em; /* 20px */
-  margin-bottom: 0.375em;
+  margin: 0.375em 0;
 }
 
 /* ==== FOOTER ==== */
@@ -210,6 +193,29 @@ section {
 }
 
 /* ==== LINKS ==== */
+
+/* Nav Links */
+#nav a {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav a:link {
+  color: #423e37;
+}
+
+#nav a:visited {
+  color: #3581b8;
+}
+
+#nav a:hover {
+  color: #3581b8;
+}
+
+#nav a:active {
+  color: #3581b8;
+}
 
 /* General Links */
 a {
@@ -254,6 +260,30 @@ a:active i {
 }
 
 /* FOR WEB
+
+Nav Bar
+#nav {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: #cdcbcd;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  text-align: center;
+}
+
+#nav .spacer {
+  width: 8em;
+  display: inline-block;
+}
+
+#nav li {
+  display: inline;
+  font-size: 1.875em; 30px
+}
+
 .projects-container {
   display: flex;
   flex-flow: row wrap;
