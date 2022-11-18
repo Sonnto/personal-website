@@ -22,11 +22,16 @@ html {
   border-radius: 50%;
 }
 
-/* ==== NAV BAR ==== */
-
 section {
   margin: 1em 0.75em;
 }
+
+.section-heading {
+  font-size: 1.5em; /* 24px */
+  text-align: center;
+}
+
+/* ==== NAV BAR ==== */
 
 #nav {
   position: fixed;
@@ -58,7 +63,7 @@ section {
 }
 
 #nav ul {
-  background-color: #cbc6c7;
+  background-color: #cdcbcd;
   list-style: none;
   margin: 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -105,11 +110,6 @@ section {
 /* ==== ABOUT ==== */
 
 #about {
-  text-align: left;
-}
-
-.section-heading {
-  font-size: 1.5em; /* 24px */
   text-align: center;
 }
 
@@ -123,6 +123,11 @@ section {
 
 #about p {
   font-size: 0.75em;
+}
+
+.contact-info {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 #about p i {
@@ -149,10 +154,9 @@ section {
 
 .project-card-item {
   border: 1px black solid;
-  flex: 1 0 0;
+  /* flex: 1 0 0; */
   min-width: 240px;
   min-height: 190px;
-  background: #fcf7f8;
   border: 0.5px solid rgba(66, 62, 55, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
@@ -165,7 +169,7 @@ section {
 
 .project-description {
   font-size: 0.75em; /* 12px */
-  margin: 0;
+  margin: 0.15em;
 }
 
 .project-card-item i {
@@ -176,28 +180,30 @@ section {
 #footer {
   font-size: 0.5em;
   text-align: center;
-  background-color: #cbc6c7;
+  background-color: #cdcbcd;
   padding: 1em;
 }
 
 /* ==== LINKS ==== */
-a {
+
+/* Clickable Icon Links */
+a i {
   text-decoration: none;
 }
 
-a:link {
+a:link i {
   color: #423e37;
 }
 
-a:visited {
+a:visited i {
   color: #423e37;
 }
 
-a:hover {
+a:hover i {
   color: #423e37;
 }
 
-a:active {
+a:active i {
   color: #423e37;
 }
 
