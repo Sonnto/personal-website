@@ -17,10 +17,15 @@ html {
 
 /* 16px = 1em; */
 
+#division {
+  margin: 0;
+  border-radius: 50%;
+}
+
 /* ==== NAV BAR ==== */
 
 section {
-  margin: 2em 1em;
+  margin: 1em 0.75em;
 }
 
 #nav {
@@ -99,21 +104,29 @@ section {
 
 /* ==== ABOUT ==== */
 
+#about {
+  text-align: left;
+}
+
+.section-heading {
+  font-size: 1.5em; /* 24px */
+  text-align: center;
+}
+
 .profile-pic {
-  width: 250px; /* 15.625em */
-  height: 250px; /* 15.625em */
+  width: 150px; /* 9.375em */
+  height: 150px; /* 9.375em */
   overflow: hidden;
   border: 0.5px solid rgba(66, 62, 55, 0.5);
   border-radius: 2.5em /* 40px */;
 }
 
-.section-heading {
-  font-size: 2.5em; /* 40px */
-  text-align: center;
+#about p {
+  font-size: 0.75em;
 }
 
 #about p i {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 /* ==== RESUME ==== */
@@ -128,33 +141,43 @@ section {
 }
 
 #projects .section-heading {
-  flex: 2 0 100%;
-  margin-top: 0;
+  /* flex: 1 0 100%; */
+  margin: 0;
 }
+
+/* PROJECT ITEM CARDS */
 
 .project-card-item {
   border: 1px black solid;
   flex: 1 0 0;
-  width: 240px;
-  height: 190px;
+  min-width: 240px;
+  min-height: 190px;
   background: #fcf7f8;
   border: 0.5px solid rgba(66, 62, 55, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
 }
 
-.project-card-item i {
-  font-size: 1em; /* 32px */
+h3 {
+  font-size: 1em; /* 16px */
+  margin-top: 0.25em;
 }
 
-h3 {
-  font-size: 2em; /* 32px */
+.project-description {
+  font-size: 0.75em; /* 12px */
+  margin: 0;
+}
+
+.project-card-item i {
+  font-size: 1.25em; /* 20px */
 }
 
 /* ==== FOOTER ==== */
 #footer {
-  font-size: 0.75em;
+  font-size: 0.5em;
   text-align: center;
+  background-color: #cbc6c7;
+  padding: 1em;
 }
 
 /* ==== LINKS ==== */
