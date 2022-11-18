@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
+/* COLOUR PALETTE: https://coolors.co/423e37-777470-888582-aba8a8-cdcbcd-fbf9ff-cfdcee-a3bedc-77a0cb-4a82b9 */
+
 html {
   box-sizing: border-box;
   background-color: #fbf9ff;
@@ -18,8 +20,9 @@ html {
 /* 16px = 1em; */
 
 #division {
-  margin: 0;
+  margin: 5em auto;
   border-radius: 50%;
+  max-width: 80%;
 }
 
 section {
@@ -39,10 +42,18 @@ section {
   width: 100%;
 }
 
+#nav li {
+  margin: 0em 1em;
+}
+
+#nav .spacer {
+  width: 8em;
+  display: inline-block;
+}
+
 #nav a {
   display: inline;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -128,6 +139,11 @@ section {
 .contact-info {
   width: fit-content;
   margin: 0 auto;
+  text-align: left;
+}
+
+.fa-mobile {
+  padding: 1.5px; /* 0.09375em */
 }
 
 #about p i {
@@ -167,6 +183,14 @@ section {
   margin: 0.25em 0em;
 }
 
+.project-preview {
+  width: 220px;
+  height: 100px;
+  border: 1px solid rgba(66, 62, 55, 0.5);
+  border-radius: 15px;
+  margin: 0.5em;
+}
+
 .project-description {
   font-size: 0.75em; /* 12px */
   margin: 0.15em;
@@ -174,6 +198,7 @@ section {
 
 .project-card-item i {
   font-size: 1.25em; /* 20px */
+  margin-bottom: 0.375em;
 }
 
 /* ==== FOOTER ==== */
@@ -185,6 +210,27 @@ section {
 }
 
 /* ==== LINKS ==== */
+
+/* General Links */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #3c6078;
+}
+
+a:visited {
+  color: #98bddc;
+}
+
+a:hover {
+  color: #cadbee;
+}
+
+a:active {
+  color: #3581b8;
+}
 
 /* Clickable Icon Links */
 a i {
@@ -200,11 +246,11 @@ a:visited i {
 }
 
 a:hover i {
-  color: #423e37;
+  color: #cadbee;
 }
 
 a:active i {
-  color: #423e37;
+  color: #aba8a8;
 }
 
 /* FOR WEB
