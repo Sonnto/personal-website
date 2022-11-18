@@ -158,9 +158,9 @@ section {
   border-radius: 40px;
 }
 
-h3 {
+.project-name {
   font-size: 1em; /* 16px */
-  margin-top: 0.25em;
+  margin: 0.25em 0em;
 }
 
 .project-description {
