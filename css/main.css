@@ -30,7 +30,7 @@ section {
 }
 
 .section-heading {
-  font-size: 1.5em; /* 24px */
+  font-size: 2em;
   text-align: center;
 }
 
@@ -73,20 +73,20 @@ section {
 }
 
 .my-title {
-  font-size: 2.25em; /* 36px */
+  font-size: 3em;
   margin: 0;
 }
 
 .subtext {
-  font-size: 1em; /* 16px */
+  font-size: 1.75em;
   line-height: 0.25em;
 }
 
 .social-icons {
-  font-size: 2em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.75em;
 }
 
 /* ==== ABOUT ==== */
@@ -104,7 +104,7 @@ section {
 }
 
 #about p {
-  font-size: 0.75em;
+  line-height: 1.5em;
 }
 
 .contact-info {
@@ -114,11 +114,11 @@ section {
 }
 
 .fa-mobile {
-  padding: 1.5px; /* 0.09375em */
+  padding: 3px; /* 0.1875em */
 }
 
 #about p i {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 /* ==== RESUME ==== */
@@ -153,7 +153,7 @@ section {
 }
 
 .project-name {
-  font-size: 1em; /* 16px */
+  font-size: 1.5em; /* 16px */
   margin: 0.25em 0em;
 }
 
