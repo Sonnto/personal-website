@@ -6,7 +6,7 @@
     <meta name="description" content="Portfolio website" />
     <meta
       name="keywords"
-      content="full-stack, developer, front-end, back-end, software, engineer, portfolio, HTML, CSS, JavaScript, MongoDB, Express.js, React.js, Node.js, SQL, mySQL, PHP, C#, Python, Toronto, Ontario, Canada, Hong Kong, Cantonese"
+      content="full-stack, developer, front-end, back-end, software, engineer, portfolio, HTML, CSS, JavaScript, MongoDB, Express.js, React.js, Node.js, SQL, mySQL, PHP, C#, Python, JQuery, Toronto, Ontario, Canada, Hong Kong, Cantonese"
     />
     <meta name="author" content="Kee-Fung Anthony Ho" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,38 +18,38 @@
     <link rel="icon" type="image/x-icon" href="images/placeholder-emblem.png" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- <script src="javascript/script.js"></script> -->
     <meta name="theme-color" content="#fafafa" />
   </head>
   <body>
     <header id="header">
       <nav id="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <!-- <li class="spacer"></li> UNCOMMENT FOR WEB-->
-          <!--<li><img class="emblem" src="#" alt="emblem shrunk to nav" /></li> -->
-          <li><a href="#resume">Résumé</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-        <a
-          href="javascript:void(0);"
-          class="hamburger-menu"
-          onclick="expandMenu()"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </a>
+        <div id="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <!-- <li class="spacer"></li> UNCOMMENT FOR WEB-->
+            <!--<li><img class="emblem" src="#" alt="emblem shrunk to nav" /></li> -->
+            <a href="#resume"><li>Résumé</li></a>
+            <a href="#projects"><li>Projects</li></a>
+          </ul>
+        </div>
       </nav>
     </header>
     <!--HOME-->
     <section id="home" class="home-container">
-      <div>
+      <div class="emblem-item">
         <img
           class="emblem"
           src="images/placeholder-emblem.png"
           alt="placeholder emblem for website"
         />
       </div>
-      <h1 class="my-title">Full-Stack Developer</h1>
+      <h1 class="main-title">Full-Stack Developer</h1>
       <div class="subtext">
         <p>Front-End • Back-End</p>
         <p>UX • Design • UI</p>
@@ -70,41 +70,48 @@
     <hr id="division" />
     <!--ABOUT-->
     <section id="about" class="about-container">
-      <h2 class="section-heading">Kee-Fung Anthony Ho</h2>
-      <div>
+      <div class="profile-pic-item">
         <img
           class="profile-pic"
           src="/images/anthony-side-profile.jpg"
           alt="Headshot profile photo of Kee-Fung Anthony Ho"
         />
-        <p>
-          I am a Toronto-based full-stack developer that transitioned from
-          reading lines of legislation to lines of code. My experience providing
-          legal services complemented by the years of vigorous training as a
-          political scientist conributes to my robust interpersonal skills, and
-          a unique and versatile approach to analyzing and solving problems. My
-          pasttimes include fitness, board games, video games, exploring new
-          restaurants, politics, law, linguistics, history, and keeping
-          up-to-date with current affairs and mobile technology advancements.
-        </p>
       </div>
+      <div class="bio-text-wrapper">
+        <div class="bio">
+          <h2 class="section-heading">Kee-Fung Anthony Ho</h2>
+          <p>
+            I am a Toronto-based full-stack developer that transitioned from
+            reading lines of legislation to reading lines of code. My experience
+            providing legal services to clients complemented by the years of
+            vigorous training as a political scientist contributes to my robust
+            interpersonal skills and provides for a unique and versatile
+            approach in analyzing and generating durable solutions to problems.
+            My pasttimes include fitness, board games, video games, exploring
+            new restaurants, politics, law, linguistics, history, and keeping
+            up-to-date with current affairs and mobile technology advancements.
+          </p>
+        </div>
 
-      <div class="contact-info">
-        <p>
-          <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
-          <a href="mailto:anthonykfho@gmail.com">anthonykfho@gmail.com</a>
-        </p>
-        <p>
-          <i class="fa-solid fa-mobile"></i>&nbsp;&nbsp;
-          <a href="tel:1-647-588-4334">+1 (647) 588-4334</a>
-        </p>
+        <div class="contact-info">
+          <p>
+            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;
+            <a href="mailto:anthonykfho@gmail.com">anthonykfho@gmail.com</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-mobile"></i>&nbsp;&nbsp;
+            <a href="tel:1-647-588-4334">+1 (647) 588-4334</a>
+          </p>
+        </div>
       </div>
     </section>
     <hr id="division" />
     <!--RESUME-->
     <section id="resume" class="resume-container">
       <h2 class="section-heading">Résumé</h2>
-      <p>Under Construction</p>
+      <p>
+        Loading... (Would love if you gave me the opportunity to add to it!)
+      </p>
     </section>
     <hr id="division" />
     <!--PROJECTS-->
@@ -119,15 +126,23 @@
           />
         </div>
         <h3 class="project-name">Sonnto: A Star Wars Tale</h3>
-        <p class="project-description">
-          A text adventure game following an original and fictional Star Wars
-          character. The game is built with JavaScript. The story will be
-          continuously updated when and if time permits. This was a project
-          built in 2022 during the Web Development programme at Humber College.
-        </p>
-        <a href="https://github.com/Sonnto/tales-of-kinis-sonnto.git"
-          ><i class="fa-brands fa-square-github"></i
-        ></a>
+        <div class="project-description">
+          <p>
+            A text adventure game following an original and fictional Star Wars
+            character. The game is built with JavaScript. The story will be
+            continuously updated when and if time permits. This project was
+            built in 2022 during the Web Development programme at Humber
+            College.
+          </p>
+        </div>
+        <div class="project-media-icon">
+          <a href="https://github.com/Sonnto/tales-of-kinis-sonnto.git"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="projects/tales-of-kinis-sonnto/index.html"
+            ><i class="fa-regular fa-folder-open"></i
+          ></a>
+        </div>
       </div>
       <!--Project 2-->
       <div class="project-card-item">
@@ -136,11 +151,16 @@
         </div>
         <div>
           <h3 class="project-name">Project Name</h3>
-          <p class="project-description">Project description</p>
-          <a href="#"><i class="fa-brands fa-square-github"></i></a>
+          <div class="project-description">
+            <p>Project description</p>
+          </div>
+          <div class="project-media-icon">
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+            <a href="#"><i class="fa-regular fa-folder-open"></i></a>
+          </div>
         </div>
       </div>
     </section>
   </body>
-  <footer id="footer">© Copyright, Kee-Fung Anthony Ho, 2022</footer>
+  <footer id="footer">© Copyright, Kee-Fung Anthony Ho, 2022.</footer>
 </html>

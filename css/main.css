@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Quattrocento+Sans&display=swap");
+/* IMPORTED FONTS
+* + Quattrocento Sans (Regular 400)
+* + Mulish (XLite 200, Lite 300, Regular
+*   400, Bold 500)
+*/
 
 /* COLOUR PALETTE: https://coolors.co/423e37-777470-888582-aba8a8-cdcbcd-fbf9ff-cfdcee-a3bedc-77a0cb-4a82b9 */
 
 html {
   box-sizing: border-box;
   background-color: #fbf9ff;
-  font-family: Karla, sans-serif;
+  font-family: "Quattrocento Sans", "Mulish", Arial, Helvetica, sans-serif;
   color: #423e37;
   margin: 0;
   padding: 0;
@@ -20,23 +25,130 @@ html {
 /* 16px = 1em; */
 
 #division {
-  margin: 5em auto;
+  margin: 80px auto;
   border-radius: 50%;
   max-width: 80%;
 }
 
+/* 
 section {
-  margin: 1em 0.75em;
-}
+  margin: 16px 12px;
+} */
 
 .section-heading {
-  font-size: 2em;
+  font-size: 32px;
   text-align: center;
+  text-transform: uppercase;
 }
 
-/* ==== NAV BAR ==== */
+/* ==== MENU ==== */
 
-#nav {
+#menu-toggle {
+  display: block;
+  position: relative;
+  /* top: 1em; */
+  /* left: 1em; */
+  padding-left: 24px;
+  padding-top: 24px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu-toggle a {
+  text-decoration: none;
+  color: #fbf9ff;
+  transition: color 0.3s ease;
+}
+
+#menu-toggle a:hover {
+  color: #98bddc;
+}
+
+#menu-toggle input {
+  display: block;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  cursor: pointer;
+  opacity: 0; /* hides input check */
+  z-index: 2; /* placed over hamburger */
+  -webkit-touch-callout: none;
+}
+
+/* Hamburger Menu Design*/
+#menu-toggle span {
+  display: block;
+  width: 34.2px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 4px;
+  z-index: 1;
+  background: #423e37;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/*Animating hamburger to close 'X'*/
+
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #fbf9ff;
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(3) /* hides the middle bar when animating to X*/ {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(2) /* crosses the X*/ {
+  transform: rotate(-45deg) translate(0px, -1px);
+}
+
+#menu {
+  position: absolute;
+  width: 155px;
+  margin: -100px 0 0 -28px;
+  padding: 24px 24px 0 24px;
+  padding-top: 100px;
+  background: #423e37;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border-radius: 0px 0px 15px 0px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+#menu li {
+  font-family: "Mulish";
+  font-weight: 300;
+  text-align: left;
+  margin: 24px 8px;
+  /* padding: 8px 16px; */
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+/* #nav {
   position: fixed;
   top: 0%;
   width: 100%;
@@ -54,15 +166,15 @@ section {
 
 #nav li {
   display: inline;
-  font-size: 1.875em; /* 30px */
+  font-size: 1.875em; /* 30px
   margin: 0em 1em;
-}
+} */
 
 /* ==== HOME ==== */
 
-#home {
+.home-container {
   text-align: center;
-  margin-top: 6em;
+  margin-top: 48px;
   padding: 0;
 }
 
@@ -72,56 +184,82 @@ section {
   overflow: hidden;
 }
 
-.my-title {
-  font-size: 3em;
-  margin: 0;
+.main-title {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 4px 16px 4px 16px;
 }
 
 .subtext {
-  font-size: 1.75em;
-  line-height: 0.25em;
+  font-family: "Mulish";
+  font-weight: 200;
+  margin: 0 16px, 0, 16px;
+  font-size: 24px;
+  line-height: 8px;
+  text-transform: lowercase;
 }
 
 .social-icons {
-  font-size: 3em;
+  font-size: 48px;
   display: flex;
   justify-content: center;
-  gap: 0.75em;
+  gap: 36px;
 }
 
 /* ==== ABOUT ==== */
 
-#about {
+.about-container {
+  display: flex;
+  flex-flow: column wrap;
   text-align: center;
+  gap: 8px;
 }
 
 .profile-pic {
-  width: 150px; /* 9.375em */
-  height: 150px; /* 9.375em */
+  width: 160px; /* 10em */
+  height: 160px; /* 10em */
   overflow: hidden;
-  border: 0.5px solid rgba(66, 62, 55, 0.5);
+  border: 1px solid rgba(66, 62, 55, 0.5);
   border-radius: 40px;
 }
 
-#about p {
-  line-height: 1.5em;
+.bio-text-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.bio {
+  font-family: "Mulish";
+  margin: 0 16px;
+  text-align: center;
+  line-height: 28px;
 }
 
 .contact-info {
+  font-family: "Mulish";
   width: fit-content;
   margin: 0 auto;
   text-align: left;
 }
 
-.fa-mobile {
-  padding: 3px; /* 0.1875em */
+/* .contact-info p {
+  margin: 0;
+} */
+
+.contact-info i {
+  font-size: 28px;
 }
 
-#about p i {
-  font-size: 1.5em;
+.fa-mobile {
+  padding: 3.5px; /* center the mobile icon under the envelope icon */
 }
 
 /* ==== RESUME ==== */
+
+.resume-container {
+  text-align: center;
+}
 
 /* ==== PROJECTS ==== */
 
@@ -129,7 +267,8 @@ section {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
-  gap: 1.5em;
+  gap: 24px;
+  margin: 0 24px 24px 24px;
 }
 
 #projects .section-heading {
@@ -149,73 +288,56 @@ section {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .project-name {
   font-size: 1.5em; /* 16px */
-  margin: 0.25em 0em;
-}
-
-.project-preview {
-  /* width: 220px;
-  height: 100px;
-  border: 1px solid rgba(66, 62, 55, 0.5);
-  border-radius: 15px; */
-  margin: 0.5em;
-  overflow: hidden;
+  margin: 0 16px;
+  font-family: "Mulish";
+  font-weight: 500;
 }
 
 .project-preview img {
-  max-width: 250px;
-  max-height: 180px;
+  max-width: 240px;
+  max-height: 190px;
   border: 1px solid rgba(66, 62, 55, 0.5);
   border-radius: 20px;
-  margin: 0.5em;
+  margin: 16px;
 }
 
 .project-description {
-  font-size: 0.75em; /* 12px */
-  margin: 0.15em;
+  font-family: "Mulish";
+  font-weight: 100;
+  margin: 16px;
+  line-height: 28px;
 }
 
-.project-card-item i {
-  font-size: 1.25em; /* 20px */
-  margin: 0.375em 0;
+.project-description p {
+  margin: 0;
+}
+
+.project-media-icon {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 36px;
+  font-size: 40px;
+  margin: 0 16px 16px 16px;
+  justify-content: center;
 }
 
 /* ==== FOOTER ==== */
 #footer {
-  font-size: 0.5em;
+  font-family: "Mulish";
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 8px;
   text-align: center;
-  background-color: #cdcbcd;
-  padding: 1em;
+  background-color: #423e37;
+  color: #fbf9ff;
+  padding: 16px;
 }
 
-/* ==== LINKS ==== */
-
-/* Nav Links */
-#nav a {
-  display: inline;
-  text-align: center;
-  text-decoration: none;
-}
-
-#nav a:link {
-  color: #423e37;
-}
-
-#nav a:visited {
-  color: #3581b8;
-}
-
-#nav a:hover {
-  color: #3581b8;
-}
-
-#nav a:active {
-  color: #3581b8;
-}
+/* ==== NON-MENU LINKS ==== */
 
 /* General Links */
 a {
@@ -259,7 +381,19 @@ a:active i {
   color: #aba8a8;
 }
 
-/* FOR WEB
+/* ==== MEDIA QUERIES ==== */
+
+/* TABLET */
+
+@media screen and (min-wdith: 769px) {
+  /* ==== HOME ==== */
+}
+
+/* DESKTOP
+
+@media screen and (min-width: 1025px){
+
+}
 
 Nav Bar
 #nav {
@@ -282,6 +416,29 @@ Nav Bar
 #nav li {
   display: inline;
   font-size: 1.875em; 30px
+}
+
+/* Nav Links */
+/* #nav a {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav a:link {
+  color: #423e37;
+}
+
+#nav a:visited {
+  color: #3581b8;
+}
+
+#nav a:hover {
+  color: #3581b8;
+}
+
+#nav a:active {
+  color: #3581b8;
 }
 
 .projects-container {
