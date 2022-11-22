@@ -39,6 +39,7 @@ section {
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
+  line-height: 48px;
 }
 
 /* ==== MENU ==== */
@@ -188,13 +189,13 @@ section {
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin: 4px 16px 4px 16px;
+  margin: 4px 20px 4px 20px;
 }
 
 .subtext {
   font-family: "Mulish";
   font-weight: 200;
-  margin: 0 16px, 0, 16px;
+  margin: 0 20px;
   font-size: 24px;
   line-height: 8px;
   text-transform: lowercase;
@@ -205,6 +206,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 36px;
+  padding-top: 8px;
 }
 
 /* ==== ABOUT ==== */
@@ -231,9 +233,10 @@ section {
 
 .bio {
   font-family: "Mulish";
-  margin: 0 16px;
+  margin: 0 20px;
   text-align: center;
   line-height: 28px;
+  font-size: 20px;
 }
 
 .contact-info {
@@ -241,6 +244,7 @@ section {
   width: fit-content;
   margin: 0 auto;
   text-align: left;
+  font-size: 20px;
 }
 
 /* .contact-info p {
@@ -291,7 +295,7 @@ section {
 }
 
 .project-name {
-  font-size: 1.5em; /* 16px */
+  font-size: 28px;
   margin: 0 16px;
   font-family: "Mulish";
   font-weight: 500;
@@ -310,6 +314,7 @@ section {
   font-weight: 100;
   margin: 16px;
   line-height: 28px;
+  font-size: 20px;
 }
 
 .project-description p {
@@ -319,7 +324,7 @@ section {
 .project-media-icon {
   display: flex;
   flex-flow: row wrap;
-  gap: 36px;
+  gap: 80px;
   font-size: 40px;
   margin: 0 16px 16px 16px;
   justify-content: center;
