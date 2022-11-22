@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Quattrocento+Sans&display=swap");
+
 /* IMPORTED FONTS
 * + Quattrocento Sans (Regular 400)
 * + Mulish (XLite 200, Lite 300, Regular
@@ -39,10 +40,11 @@ section {
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
-  line-height: 48px;
+  line-height: 44px;
+  margin: 28px 0;
 }
 
-/* ==== MENU ==== */
+/* ========== MENU ========= */
 
 #menu-toggle {
   display: block;
@@ -79,7 +81,7 @@ section {
   -webkit-touch-callout: none;
 }
 
-/* Hamburger Menu Design*/
+/* === Hamburger Menu Design === */
 #menu-toggle span {
   display: block;
   width: 34.2px;
@@ -102,7 +104,7 @@ section {
   transform-origin: 0% 100%;
 }
 
-/*Animating hamburger to close 'X'*/
+/* === Animating hamburger to close 'X' === */
 
 #menu-toggle input:checked ~ span {
   opacity: 1;
@@ -171,7 +173,7 @@ section {
   margin: 0em 1em;
 } */
 
-/* ==== HOME ==== */
+/* ========== HOME ========== */
 
 .home-container {
   text-align: center;
@@ -180,9 +182,8 @@ section {
 }
 
 .emblem {
-  max-width: 200px; /* 12.5em */
-  max-height: 200px; /* 12.5em */
-  overflow: hidden;
+  max-width: 240px; /* 12.5em */
+  max-height: 240px; /* 12.5em */
 }
 
 .main-title {
@@ -206,10 +207,10 @@ section {
   display: flex;
   justify-content: center;
   gap: 36px;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
-/* ==== ABOUT ==== */
+/* ========== ABOUT ========== */
 
 .about-container {
   display: flex;
@@ -219,8 +220,8 @@ section {
 }
 
 .profile-pic {
-  width: 160px; /* 10em */
-  height: 160px; /* 10em */
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border: 1px solid rgba(66, 62, 55, 0.5);
   border-radius: 40px;
@@ -233,10 +234,14 @@ section {
 
 .bio {
   font-family: "Mulish";
-  margin: 0 20px;
+  margin: 0 24px;
   text-align: center;
-  line-height: 28px;
-  font-size: 20px;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.bio p {
+  margin-bottom: 8px;
 }
 
 .contact-info {
@@ -244,7 +249,7 @@ section {
   width: fit-content;
   margin: 0 auto;
   text-align: left;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 /* .contact-info p {
@@ -252,25 +257,26 @@ section {
 } */
 
 .contact-info i {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .fa-mobile {
-  padding: 3.5px; /* center the mobile icon under the envelope icon */
+  padding: 0 4px; /* center the mobile icon under the envelope icon */
 }
 
-/* ==== RESUME ==== */
+/* ========== RESUME ========== */
+
+/* === Coming Soon... === */
 
 .resume-container {
   text-align: center;
 }
 
-/* ==== PROJECTS ==== */
+/* ========== PROJECTS ========== */
 
 .projects-container {
   display: flex;
   flex-flow: column wrap;
-  text-align: center;
   gap: 24px;
   margin: 0 24px 24px 24px;
 }
@@ -280,18 +286,18 @@ section {
   margin: 0;
 }
 
-/* PROJECT ITEM CARDS */
+/* === PROJECT ITEM CARDS === */
 .project-card-item {
   border: 1px black solid;
   /* flex: 1 0 0; */
   min-width: 240px;
-  min-height: 190px;
+  min-height: 240px;
   border: 0.5px solid rgba(66, 62, 55, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 40px;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  text-align: center;
 }
 
 .project-name {
@@ -315,6 +321,7 @@ section {
   margin: 16px;
   line-height: 28px;
   font-size: 20px;
+  text-align: center;
 }
 
 .project-description p {
@@ -330,7 +337,11 @@ section {
   justify-content: center;
 }
 
-/* ==== FOOTER ==== */
+.fa-folder-open {
+  padding: 0 2.5px;
+}
+
+/* ========== FOOTER ========== */
 #footer {
   font-family: "Mulish";
   font-weight: 200;
@@ -342,7 +353,7 @@ section {
   padding: 16px;
 }
 
-/* ==== NON-MENU LINKS ==== */
+/* ========== NON-MENU LINKS ========== */
 
 /* General Links */
 a {
@@ -386,21 +397,159 @@ a:active i {
   color: #aba8a8;
 }
 
-/* ==== MEDIA QUERIES ==== */
+/* ========== MEDIA QUERIES ========== */
 
-/* TABLET */
+/* === TABLET === */
 
-@media screen and (min-wdith: 769px) {
-  /* ==== HOME ==== */
+@media screen and (min-width: 769px) {
+  .section-heading {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 28px 0;
+  }
+
+  /* ======== HOME ======== */
+
+  .emblem {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .main-title {
+    font-size: 64px;
+    letter-spacing: 8px;
+    margin: 8px 20px 8px 20px;
+  }
+
+  .subtext {
+    font-size: 28px;
+    line-height: 12px;
+  }
+
+  .social-icons {
+    font-size: 64px;
+    gap: 58px;
+  }
+
+  /* ======== ABOUT ======== */
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 80px;
+  }
+
+  .bio-text-wrapper {
+    margin: 32px;
+  }
+
+  .bio {
+    line-height: 48px;
+    font-size: 28px;
+  }
+
+  .contact-info {
+    font-size: 28px;
+  }
+
+  .contact-info i {
+    font-size: 40px;
+  }
+
+  .fa-mobile {
+    padding: 0 5px; /* center the mobile icon under the envelope icon */
+  }
+
+  /* ======== RESUME ======== */
+
+  /* === Coming Soon... === */
+
+  /* ======== PROJECTS ======== */
+
+  .projects-container {
+    gap: 32px;
+    margin: 0 32px 32px 32px;
+  }
+
+  /* === PROJECT ITEM CARDS === */
+  .project-card-item {
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 80px;
+  }
+
+  .project-name {
+    font-size: 36px;
+  }
+
+  .project-preview img {
+    max-width: 340px;
+    max-height: 290px;
+    border-radius: 40px;
+    margin: 32px;
+  }
+
+  .project-description {
+    margin: 32px;
+    line-height: 44px;
+    font-size: 28px;
+  }
+
+  .project-media-icon {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 120px;
+    font-size: 48px;
+    margin: 0 32px 32px 32px;
+  }
+
+  .fa-folder-open {
+    padding: 0 3px;
+  }
 }
 
-/* DESKTOP
+/* === DESKTOP === */
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px) {
+  /* .section-heading {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 28px 0;
+  */
 
+  /* ======== HOME ======== */
+  /*
+    .emblem {
+    max-width: 340px;
+    max-height: 340px;
+  }
+
+  .main-title {
+    font-size: 64px;
+    letter-spacing: 8px;
+    margin: 8px 20px 8px 20px;
+  }
+
+  .subtext {
+    font-size: 28px;
+    line-height: 12px;
+  }
+
+  .social-icons {
+    font-size: 64px;
+    gap: 58px;
+  }
+
+  /* ======== ABOUT ======== */
+
+  /* ======== RESUME ======== */
+
+  /* === Coming Soon... === */
+
+  /* ======== PROJECTS ======== */
 }
 
-Nav Bar
+/* Nav Bar
 #nav {
   position: fixed;
   top: 0%;
