@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Quattrocento+Sans&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Quattrocento+Sans:wght@400;700&display=swap");
 /* IMPORTED FONTS
-* + Quattrocento Sans (Regular 400)
+* + Quattrocento Sans (Regular 400, Bold 700)
 * + Mulish (XLite 200, Lite 300, Regular
 *   400, Bold 500)
 */
 
 /* COLOUR PALETTE: https://coolors.co/423e37-777470-888582-aba8a8-cdcbcd-fbf9ff-cfdcee-a3bedc-77a0cb-4a82b9 */
 
+/* ========== UNIVERSAL ========== */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -24,8 +24,6 @@ html {
   box-sizing: inherit;
 }
 
-/* 16px = 1em; */
-
 #division {
   margin: 80px auto;
   border-radius: 50%;
@@ -33,11 +31,17 @@ html {
 }
 
 .section-heading {
+  font-weight: 700;
   font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   line-height: 44px;
+  letter-spacing: 8px;
   margin: 0;
+}
+
+.next-line {
+  display: block;
 }
 
 /* ========== MENU ========= */
@@ -56,7 +60,6 @@ html {
   height: 22px;
   background-color: #fbf9ff;
   border-radius: 8%;
-  /* border: 1px red solid; */
 }
 
 #menu-toggle {
@@ -191,18 +194,23 @@ html {
 
 .main-title {
   font-size: 48px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin: 4px 16px 4px 16px;
+  margin: 16px 24px 0 24px;
 }
 
 .subtext {
   font-family: "Mulish";
   font-weight: 200;
-  margin: 0 20px;
-  font-size: 24px;
-  line-height: 8px;
-  text-transform: lowercase;
+  margin: 8px 24px 16px 24px;
+  font-size: 20px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.subtext p {
+  margin: 0;
 }
 
 .social-icons {
@@ -210,7 +218,6 @@ html {
   display: flex;
   justify-content: center;
   gap: 36px;
-  padding-top: 12px;
 }
 
 /* ========== ABOUT ========== */
@@ -254,7 +261,7 @@ html {
   font-size: 24px;
 }
 
-.fa-mobile {
+.fa-mobile-screen {
   padding: 0 3px; /* center the mobile icon under the envelope icon */
 }
 
@@ -278,9 +285,8 @@ html {
 
 /* === PROJECT ITEM CARDS === */
 .project-card-item {
-  border: 1px black solid;
   border: 0.5px solid rgba(66, 62, 55, 0.5);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
   border-radius: 40px;
   text-align: center;
   width: fit-content;
@@ -293,10 +299,6 @@ html {
   font-weight: 500;
 }
 
-.project-preview {
-  margin: 0;
-}
-
 .project-preview img {
   width: 80%;
   border: 1px solid rgba(66, 62, 55, 0.5);
@@ -306,7 +308,7 @@ html {
 
 .project-description {
   font-family: "Mulish";
-  font-weight: 100;
+  font-weight: 200;
   margin: 16px 24px;
   line-height: 24px;
   font-size: 16px;
@@ -340,6 +342,7 @@ html {
   background-color: #423e37;
   color: #fbf9ff;
   padding: 16px;
+  margin-top: 24px;
 }
 
 /* ========== NON-MENU LINKS ========== */
@@ -405,13 +408,14 @@ a:active i {
 
   .main-title {
     font-size: 64px;
-    letter-spacing: 8px;
-    margin: 8px 20px 8px 20px;
+    letter-spacing: 12px;
+    margin: 24px 32px 0 32px;
   }
 
   .subtext {
-    font-size: 28px;
-    line-height: 12px;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 16px 32px 28px 32px;
   }
 
   .social-icons {
@@ -440,7 +444,7 @@ a:active i {
     font-size: 28px;
   }
 
-  .fa-mobile {
+  .fa-mobile-screen {
     padding: 0 3.5px; /* center the mobile icon under the envelope icon */
   }
 
@@ -457,8 +461,8 @@ a:active i {
 
   /* === PROJECT ITEM CARDS === */
   .project-card-item {
-    border: 1.5px solid rgba(66, 62, 55, 0.5);
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+    border: 0.5px solid rgba(66, 62, 55, 0.5);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 80px;
   }
 
@@ -485,6 +489,11 @@ a:active i {
 
   .fa-arrow-up-right-from-square {
     padding: 0 4.5px;
+  }
+
+  /* ======== FOOTER ======== */
+  #footer {
+    margin-top: 32px;
   }
 }
 
@@ -545,7 +554,7 @@ a:active i {
     font-size: 32px;
   }
 
-  .fa-mobile {
+  .fa-mobile-screen {
     padding: 0 4px; /* center the mobile icon under the envelope icon */
   }
 
