@@ -519,7 +519,7 @@ a:active i {
   .about-content-container {
     flex-flow: row;
     align-items: center;
-    margin: 0 58px;
+    margin: 32px 58px;
     gap: 58px;
   }
 
@@ -572,6 +572,6 @@ a:active i {
   /* ======== FOOTER ======== */
   #footer {
     font-size: 12px;
-    margin-top: 32px;
+    margin-top: 58px;
   }
 }
