@@ -261,7 +261,7 @@ html {
   font-size: 24px;
 }
 
-.fa-mobile-screen {
+.fa-mobile-screen-button {
   padding: 0 3px; /* center the mobile icon under the envelope icon */
 }
 
@@ -425,6 +425,10 @@ a:active i {
 
   /* ======== ABOUT ======== */
 
+  .about-content-container {
+    margin: 32px 58px;
+  }
+
   .profile-pic {
     width: 300px;
     height: 300px;
@@ -444,7 +448,7 @@ a:active i {
     font-size: 28px;
   }
 
-  .fa-mobile-screen {
+  .fa-mobile-screen-button {
     padding: 0 3.5px; /* center the mobile icon under the envelope icon */
   }
 
@@ -456,7 +460,7 @@ a:active i {
 
   .projects-content-container {
     gap: 32px;
-    margin: 32px;
+    margin: 24px 58px 58px 58px;
   }
 
   /* === PROJECT ITEM CARDS === */
@@ -547,14 +551,14 @@ a:active i {
   }
 
   .contact-info {
-    margin: 0 32px;
+    margin: 32px 32px 32px 0;
   }
 
   .contact-info i {
     font-size: 32px;
   }
 
-  .fa-mobile-screen {
+  .fa-mobile-screen-button {
     padding: 0 4px; /* center the mobile icon under the envelope icon */
   }
 
@@ -563,6 +567,10 @@ a:active i {
   /* === Coming Soon... === */
 
   /* ======== PROJECTS ======== */
+
+  .projects-content-container {
+    margin: 32px 58px 58px 58px;
+  }
 
   /* === PROJECT ITEM CARDS === */
   .project-card-item {
@@ -580,7 +588,7 @@ a:active i {
 
   /* ======== FOOTER ======== */
   #footer {
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 58px;
   }
 }
