@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Quattrocento+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 /* IMPORTED FONTS
-* + Quattrocento Sans (Regular 400, Bold 700)
-* + Mulish (XLite 200, Lite 300, Regular
-*   400, Bold 500)
+* + Quattrocento Sans (Regular 400, Regular 400 Italic, Bold 700)
+*
+* + Mulish (XLite 200, XLite 200 Italic, Lite 300, Lite 300 Italic, Regular 400, Regular 400 Italiac, Medium 500, Medium 500 Italic)
 */
 
 /* COLOUR PALETTE: https://coolors.co/423e37-777470-888582-aba8a8-cdcbcd-fbf9ff-cfdcee-a3bedc-77a0cb-4a82b9 */
@@ -570,6 +570,7 @@ a:active i {
 
   .projects-content-container {
     margin: 32px 58px 58px 58px;
+    justify-content: space-evenly;
   }
 
   /* === PROJECT ITEM CARDS === */
