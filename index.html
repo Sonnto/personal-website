@@ -15,14 +15,19 @@
       src="https://kit.fontawesome.com/fe76fcb7fd.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/x-icon" href="images/placeholder-emblem.png" />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <!-- <script src="javascript/script.js"></script> -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/placeholder-emblem.png"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
     <meta name="theme-color" content="#fafafa" />
+    <script src="./javascript/script.js"></script>
   </head>
   <body>
     <header id="header">
+      <!--============================== NAV ==============================-->
       <nav id="nav">
         <div id="menu-tab"></div>
         <div id="menu-toggle">
@@ -42,13 +47,12 @@
         </div>
       </nav>
     </header>
-    <!--HOME-->
+    <!--============================== HOME ==============================-->
     <section id="home" class="home-container">
-      <!-- <div class="emblem-overlay"></div> -->
       <div class="emblem-item">
         <img
           class="emblem"
-          src="images/placeholder-emblem.png"
+          src="./assets/images/placeholder-emblem.png"
           alt="placeholder emblem for website"
         />
       </div>
@@ -73,7 +77,7 @@
       </div>
     </section>
     <hr id="division" />
-    <!--ABOUT-->
+    <!--============================== ABOUT ==============================-->
     <section id="about" class="about-container">
       <h2 class="section-heading desktop-sect-heading">
         Kee-Fung <span class="next-line">Anthony Ho</span>
@@ -82,7 +86,7 @@
         <div class="profile-pic-item">
           <img
             class="profile-pic"
-            src="/images/anthony-side-profile.jpg"
+            src="./assets/images/anthony-side-profile.jpg"
             alt="Headshot profile photo of Kee-Fung Anthony Ho"
           />
         </div>
@@ -122,22 +126,56 @@
       </div>
     </section>
     <hr id="division" />
-    <!--RESUME-->
+    <!--============================== RESUME ==============================-->
     <section id="resume" class="resume-container">
       <h2 class="section-heading">Résumé</h2>
       <p>Coming Soon...</p>
     </section>
     <hr id="division" />
-    <!--PROJECTS-->
+    <!--============================== PROJECTS ==============================-->
     <section id="projects" class="projects-container">
       <h2 class="section-heading">Projects</h2>
       <div class="projects-content-container">
-        <!--Project 1-->
+        <!--============================== PROJECT ONE ==============================-->
         <div class="project-card-item">
           <div class="project-preview">
             <img
-              src="images/tales-of-Kinis-Sonnto-project-preview.png"
-              alt='Previews of text-adventure game "Sonnto: A Star Wars Tale"'
+              src="./assets/images/project-previews/personal-website-project-preview.png"
+              alt="Preview of Anthony's personal website."
+            />
+          </div>
+          <h3 class="project-name">Personal Website</h3>
+          <div class="project-description">
+            <p>
+              As a software developer, it is imperative to showcase your skill
+              set. Therefore, what better way to do that than to build my own
+              personal website from the ground up? That is exactly what I did
+              instead of relying on any of the quick-to-launch site builder
+              platforms out there. My personal website features sections to
+              explore a little about me, my resume and experience, and a
+              portfolio of my projects. By developing my own website, it allows
+              me to keep costs low, hone my programming skills, implement my own
+              design, and update its content with haste and ease. My website is
+              written in
+              <strong>HTML</strong> and <strong>CSS</strong> during the autumn
+              of 2022.
+            </p>
+          </div>
+          <div class="project-media-icon">
+            <a href="https://github.com/Sonnto/personal-website.git"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <!--============================== PROJECT TWO ==============================-->
+        <div class="project-card-item">
+          <div class="project-preview">
+            <img
+              src="./assets/images/project-previews/tales-of-Kinis-Sonnto-project-preview.png"
+              alt='Preview of text-adventure game "Sonnto: A Star Wars Tale".'
             />
           </div>
           <h3 class="project-name">
@@ -145,12 +183,17 @@
           </h3>
           <div class="project-description">
             <p>
-              "May the Force be with you." This is a text-adventure game that
-              follows an original and fictional <i>Star Wars</i> character - a
-              Jedi Master by the name of Kinis Sonnto. This fanfiction is set
-              thousands of years after the original six films and will be
-              continuously updated when and if time permits. The project is
-              written in HTML, CSS, and JavaScript during the autumn of 2022.
+              "May the Force be with you." Ever since I saw
+              <i>Star Wars: Attack of the Clones</i> on the television as a kid,
+              I became a huge fan of <i>Star Wars</i>, so much so that I had
+              written stories on my free time in the past. By applying my
+              passion for coding, I was able to bring one of these stories to
+              life in a form of a text-adventure game. The story follows an
+              original and fictional <i>Star Wars</i> character - a Jedi Master
+              by the name of Kinis Sonnto. This fanfiction is set thousands of
+              years after the original six films. The project is written in
+              <strong>HTML</strong>, <strong>CSS</strong>, and
+              <strong>JavaScript</strong> during the autumn of 2022.
             </p>
           </div>
           <div class="project-media-icon">
@@ -158,6 +201,41 @@
               ><i class="fa-solid fa-code"></i
             ></a>
             <a href="projects/tales-of-kinis-sonnto/index.html"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <!--============================== PROJECT THREE ==============================-->
+        <div class="project-card-item">
+          <div class="project-preview">
+            <img src="#" alt="Preview of teacher's database project." />
+          </div>
+          <h3 class="project-name">School Database</h3>
+          <div class="project-description">
+            <p>
+              This full-stack project is a minimal viable product of a web app
+              that houses data of fictional teachers who work at a fictional
+              school. It features the ability to create a new teacher record, a
+              search function to search (by name, employee number, etc.) and
+              display the
+              <strong>MySQL</strong> database of teachers, update information of
+              a teacher (such as date of employment, salary, etc.), and delete a
+              teacher's record - all with <strong>SQL</strong> queries. This
+              project allowed me to learn, practice, and experiment how to build
+              a fully functional web app capable of C.R.U.D. using primarily
+              <strong>C#</strong>. The database was created via
+              <strong>phpMyAdmin</strong> in <strong>MAMP</strong> and the web
+              app used the <strong>ASP.NET</strong> framework. It also made use
+              of <strong>HTML</strong>, <strong>CSS</strong>, and
+              <strong>JavaScript</strong>.
+            </p>
+          </div>
+          <div class="project-media-icon">
+            <a
+              href="https://github.com/Sonnto/http-5112-assignment3-cumulative1"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+            <a href="#"
               ><i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
           </div>
