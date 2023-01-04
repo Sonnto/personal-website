@@ -576,6 +576,10 @@ a:active i {
   /* === PROJECT ITEM CARDS === */
   .project-card-item {
     flex-basis: 47%;
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between; */
   }
 
   .project-media-icon {
