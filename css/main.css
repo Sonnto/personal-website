@@ -350,6 +350,7 @@ html {
 /* General Links */
 a {
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:link {
@@ -371,6 +372,8 @@ a:active {
 /* Clickable Icon Links */
 a i {
   text-decoration: none;
+  color: #423e37;
+  transition: color 0.3s ease;
 }
 
 a:link i {
