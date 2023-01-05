@@ -44,6 +44,49 @@ html {
   display: block;
 }
 
+/* ==================== LINKS and MENU ==================== */
+
+/* ==================== LINKS ==================== */
+
+/* General Links */
+a,
+a i,
+#menu-toggle a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:link {
+  color: #3c6078;
+}
+
+a:visited {
+  color: #98bddc;
+}
+
+a:hover {
+  color: #cadbee;
+}
+
+a:active {
+  color: #3581b8;
+}
+
+/* Clickable Icon Links */
+a i,
+a:link i,
+a:visited i {
+  color: #423e37;
+}
+
+a:hover i {
+  color: #cadbee;
+}
+
+a:active i {
+  color: #aba8a8;
+}
+
 /* ==================== MENU ==================== */
 
 #nav {
@@ -73,13 +116,15 @@ html {
 }
 
 #menu-toggle a {
-  text-decoration: none;
   color: #fbf9ff;
-  transition: color 0.3s ease;
 }
 
 #menu-toggle a:hover {
   color: #98bddc;
+}
+
+#menu-toggle a:active {
+  color: #3581b8;
 }
 
 #menu-toggle input {
@@ -343,53 +388,6 @@ html {
   color: #fbf9ff;
   padding: 16px;
   margin-top: 24px;
-}
-
-/* ==================== NON-MENU LINKS ==================== */
-
-/* General Links */
-a {
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:link {
-  color: #3c6078;
-}
-
-a:visited {
-  color: #98bddc;
-}
-
-a:hover {
-  color: #cadbee;
-}
-
-a:active {
-  color: #3581b8;
-}
-
-/* Clickable Icon Links */
-a i {
-  text-decoration: none;
-  color: #423e37;
-  transition: color 0.3s ease;
-}
-
-a:link i {
-  color: #423e37;
-}
-
-a:visited i {
-  color: #423e37;
-}
-
-a:hover i {
-  color: #cadbee;
-}
-
-a:active i {
-  color: #aba8a8;
 }
 
 /* ==================== MEDIA QUERIES ==================== */
