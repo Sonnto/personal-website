@@ -48,7 +48,7 @@ html {
 
 /* ==================== LINKS ==================== */
 
-/* General Links */
+/* === General Links === */
 a,
 a i,
 #menu-toggle a {
@@ -72,7 +72,7 @@ a:active {
   color: #3581b8;
 }
 
-/* Clickable Icon Links */
+/* === Icon Links === */
 a i,
 a:link i,
 a:visited i {
