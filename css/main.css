@@ -18,6 +18,12 @@ html {
   padding: 0;
 }
 
+h3,
+h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -316,6 +322,20 @@ a:active i {
 
 .resume-container {
   text-align: center;
+}
+
+.experience-container {
+  text-align: left;
+  margin: 24px;
+  font-family: "Mulish";
+  font-weight: 200;
+}
+
+.experience-name {
+  font-size: 28px;
+  font-family: "Mulish";
+  font-weight: 500;
+  margin: 16px 0;
 }
 
 /* ==================== PROJECTS ==================== */
