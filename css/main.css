@@ -318,24 +318,30 @@ a:active i {
 
 /* ==================== RESUME ==================== */
 
-/* === Coming Soon... === */
-
 .resume-container {
   text-align: center;
+  margin: 0px 32px;
 }
 
 .experience-container {
   text-align: left;
-  margin: 24px;
   font-family: "Mulish";
   font-weight: 200;
 }
 
-.experience-name {
+.experience-type {
   font-size: 28px;
   font-family: "Mulish";
   font-weight: 500;
-  margin: 16px 0;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.experience-name {
+  font-size: 24px;
+  font-family: "Mulish";
+  font-weight: 500;
+  margin: 32px 0 0 0;
 }
 
 /* ==================== PROJECTS ==================== */
@@ -475,7 +481,23 @@ a:active i {
 
   /* ==================== TABLET 769px RESUME ==================== */
 
-  /* === Coming Soon... === */
+  .resume-container {
+    margin: 0 58px;
+  }
+
+  .experience-container {
+    font-size: 20px;
+  }
+
+  .experience-type {
+    font-size: 36px;
+    margin: 32px 0;
+  }
+
+  .experience-name {
+    font-size: 28px;
+    margin: 32px 0 0 0;
+  }
 
   /* ==================== TABLET 769px PROJECTS ==================== */
 
@@ -530,7 +552,7 @@ a:active i {
   #resume,
   #projects {
     max-width: 1440px;
-    margin: auto;
+    /* margin: auto; */
   }
 
   /* ==================== DESKTOP 1025px MENU ==================== */
@@ -585,7 +607,9 @@ a:active i {
 
   /* ==================== DESKTOP 1025px RESUME ==================== */
 
-  /* === Coming Soon... === */
+  .resume-container {
+    margin: 0 58px;
+  }
 
   /* ==================== DESKTOP 1025px PROJECTS ==================== */
 
