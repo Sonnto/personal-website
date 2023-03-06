@@ -644,6 +644,7 @@ a:active i {
 }
 
 /* ==================== TODO ====================
+- build backend and use PHP to loop database to generate resume and projects sections
 - add resume section, displayed via pulling from a .json file;
 - change project cards' full-displayed to modals;
 - potentially switch to react and/or rebuild?;
