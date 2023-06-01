@@ -1,10 +1,6 @@
-export default function About() {
-  const bio =
-    "I am a full-stack developer with legal and political training, specializing in crafting responsive and innovative digital solutions to address real-world problems. I have achieved success in designing and developing efficient, scalable, and high-performance projects by leveraging a wide range of languages, frameworks, and tools. By staying updated with the latest trends and technologies, I continuously strive to bring cutting-edge solutions to future challenges.";
-  const email = "anthonykfho@gmail.com";
-  const mailToEmail = `mailto:${email}`;
-  const mobileNum = "+1 (647) 588-4334";
-  const telMobileNum = `tel:${mobileNum}`;
+export default function About({ data }) {
+  const mailToEmail = `mailto:${data.email}`;
+  const telMobileNum = `tel:${data.mobileNum}`;
   const viewResume = () => {
     window.open("./assets/documents/CV_HoKeeFungAnthony.pdf", "_blank");
   };
@@ -13,14 +9,15 @@ export default function About() {
     <>
       <div className="bio-text-wrapper">
         <h2 className="section-heading desktop-sect-heading">
-          Kee-Fung <span className="next-line">Anthony Ho</span>
+          Kee-Fung
+          <span className="next-line">Anthony Ho</span>
         </h2>
         <div className="about-content-container">
           <div className="profile-pic-item">
             <img
               className="profile-pic"
-              src="./assets/images/anthony-side-profile.jpg"
-              alt="Headshot of Kee-Fung Anthony Ho."
+              src="./assets/images/profile/anthony-side-profile.jpg"
+              alt="Headshot of Kee-Fung Anthony Ho"
             />
           </div>
           <div className="bio-text-wrapper">
@@ -28,7 +25,7 @@ export default function About() {
               Kee-Fung <span className="next-line">Anthony Ho</span>
             </h2>
             <div className="bio">
-              <p>{bio}</p>
+              <p>{data.bio}</p>
             </div>
             <div className="contact-info">
               <p>
@@ -38,7 +35,7 @@ export default function About() {
                   aria-label="Click to e-mail Anthony"
                   rel="noopener"
                 >
-                  &nbsp;&nbsp;&nbsp;{email}
+                  &nbsp;&nbsp;&nbsp;{data.email}
                 </a>
               </p>
               <p>
@@ -48,7 +45,7 @@ export default function About() {
                   aria-label="Click to call Anthony via his mobile phone number"
                   rel="noopener"
                 >
-                  &nbsp;&nbsp;&nbsp;{mobileNum}
+                  &nbsp;&nbsp;&nbsp;{data.mobileNum}
                 </a>
               </p>
               <button className="resume-button" onClick={viewResume}>
