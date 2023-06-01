@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "language": "HTML",
+      "logo": ""
+    },
+    {
+      "id": 2,
+      "language": "CSS",
+      "logo": ""
+    },
+    {
+      "id": 3,
+      "language": "JavaScript",
+      "logo": ""
+    },
+    {
+      "id": 4,
+      "language": "React.js",
+      "logo": ""
+    },
+    {
+      "id": 5,
+      "language": "Next.js",
+      "logo": ""
+    },
+    {
+      "id": 6,
+      "language": "Firebase",
+      "logo": ""
+    },
+    {
+      "id": 7,
+      "language": "C#",
+      "logo": ""
+    },
+    {
+      "id": 8,
+      "language": "Tailwind",
+      "logo": ""
+    },
+    {
+      "id": 9,
+      "language": "PHP",
+      "logo": ""
+    },
+    {
+      "id": 10,
+      "language": "Laravel",
+      "logo": ""
+    },
+    {
+      "id": 11,
+      "language": "C#",
+      "logo": ""
+    },
+    {
+      "id": 12,
+      "language": "ASP.NET",
+      "logo": ""
+    },
+    {
+      "id": 13,
+      "language": "jQuery",
+      "logo": ""
+    },
+    {
+      "id": 14,
+      "language": "SQL",
+      "logo": ""
+    },
+    {
+      "id": 15,
+      "language": "MySQL",
+      "logo": ""
+    },
+    {
+      "id": 16,
+      "language": "MongoDB",
+      "logo": ""
+    },
+    {
+      "id": 17,
+      "language": "Git",
+      "logo": ""
+    },
+    {
+      "id": 18,
+      "language": "Node.js",
+      "logo": ""
+    },
+    {
+      "id": 19,
+      "language": "Python",
+      "logo": ""
+    }
+  ]
+}
