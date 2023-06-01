@@ -51,11 +51,9 @@ export default function About() {
                   &nbsp;&nbsp;&nbsp;{mobileNum}
                 </a>
               </p>
-              <p>
-                <button className="resume-button" onClick={viewResume}>
-                  View Resume
-                </button>
-              </p>
+              <button className="resume-button" onClick={viewResume}>
+                View Resume
+              </button>
             </div>
           </div>
         </div>
