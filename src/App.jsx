@@ -3,21 +3,23 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
-import Education from "./components/Education";
 import Employment from "./components/Employment";
+import Education from "./components/Education";
 import Project from "./components/Project";
 import "./App.css";
 
 export default function App() {
-  const [projects, setProjects] = useState(null);
-  const [education, setEducation] = useState(null);
+  const [about, setAbout] = useState(null);
   const [employments, setEmployments] = useState(null);
+  const [education, setEducation] = useState(null);
+  const [projects, setProjects] = useState(null);
+  const [tech, setTech] = useState(null);
 
   useEffect(() => {
     const fetchData = async (type, setter) => {
       try {
         // const url = "";
-        const res = await fetch(`./${type}Data.json`);
+        const res = await fetch(`./assets/data/${type}Data.json`);
         const json = await res.json();
         setter(json);
       } catch (error) {
@@ -25,10 +27,21 @@ export default function App() {
         console.log("test error");
       }
     };
+    fetchData("about", setAbout);
     fetchData("employments", setEmployments);
     fetchData("education", setEducation);
     fetchData("projects", setProjects);
+    fetchData("tech", setTech);
   }, []);
+
+  //About section
+  //About data
+  let aboutArray = [];
+  if (about) {
+    for (let i = 0; i < about.data.length; i++) {
+      aboutArray.push(<About data={about.data[i]} />);
+    }
+  }
 
   //Resume section
   //Employment data
@@ -47,11 +60,21 @@ export default function App() {
     }
   }
 
+  //Project section
   // Project data
   let projectArray = [];
   if (projects) {
     for (let i = 0; i < projects.data.length; i++) {
       projectArray.push(<Project data={projects.data[i]} />);
+    }
+  }
+
+  // Skills, Languages, Tools, Frameworks section
+  // Tech data
+  let techArray = [];
+  if (tech) {
+    for (let i = 0; i < tech.data.length; i++) {
+      techArray.push(<Project data={tech.data[i]} />);
     }
   }
 
@@ -63,7 +86,7 @@ export default function App() {
       </section>
       <hr id="division" />
       <section id="about" className="about-container">
-        <About />
+        {aboutArray}
       </section>
 
       <hr id="division" />
