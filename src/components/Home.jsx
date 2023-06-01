@@ -4,7 +4,7 @@ export default function Home() {
       <div className="emblem-item">
         <img
           className="emblem"
-          src="./assets/images/placeholder-emblem.png"
+          src="./assets/images/profile/placeholder-emblem.png"
           alt="Placeholder emblem for website."
         />
       </div>
@@ -19,7 +19,7 @@ export default function Home() {
       <div className="social-icons">
         <a
           href="https://github.com/sonnto"
-          aria-label="Click for Anthony's Github"
+          aria-label="Click for Anthony's GitHub"
           rel="noopener"
         >
           <i className="fab fa-github-square"></i>
