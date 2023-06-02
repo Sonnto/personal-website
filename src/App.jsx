@@ -6,7 +6,7 @@ import About from "./components/About";
 import Employment from "./components/Employment";
 import Education from "./components/Education";
 import Project from "./components/Project";
-import "./App.css";
+import "./styles/App.css";
 
 export default function App() {
   const [about, setAbout] = useState(null);
