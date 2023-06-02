@@ -5,15 +5,15 @@
 * + Mulish (XLite 200, XLite 200 Italic, Lite 300, Lite 300 Italic, Regular 400, Regular 400 Italiac, Medium 500, Medium 500 Italic)
 */
 
-/* COLOUR PALETTE: https://coolors.co/423e37-777470-888582-aba8a8-cdcbcd-fbf9ff-cfdcee-a3bedc-77a0cb-4a82b9 */
+/* COLOUR PALETTE: https://coolors.co/090805-777470-888582-aba8a8-cdcbcd-F6F7FA-cfdcee-a3bedc-77a0cb-4a82b9 */
 
 /* ==================== UNIVERSAL ==================== */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  background-color: #fbf9ff;
+  background-color: #f6f7fa;
   font-family: "Quattrocento Sans", "Mulish", Arial, Helvetica, sans-serif;
-  color: #423e37;
+  color: #090805;
   margin: 0;
   padding: 0;
 }
@@ -82,7 +82,7 @@ a:active {
 a i,
 a:link i,
 a:visited i {
-  color: #423e37;
+  color: #090805;
 }
 
 a:hover i {
@@ -107,7 +107,7 @@ a:active i {
   left: 24px;
   width: 34px;
   height: 22px;
-  background-color: #fbf9ff;
+  background-color: #f6f7fa;
   border-radius: 8%;
 }
 
@@ -122,7 +122,7 @@ a:active i {
 }
 
 #menu-toggle a {
-  color: #fbf9ff;
+  color: #f6f7fa;
 }
 
 #menu-toggle a:hover {
@@ -155,7 +155,7 @@ a:active i {
   position: relative;
   border-radius: 4px;
   z-index: 1;
-  background: #423e37;
+  background: #090805;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -174,7 +174,7 @@ a:active i {
 #menu-toggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
-  background: #fbf9ff;
+  background: #f6f7fa;
 }
 
 #menu-toggle input:checked ~ span:nth-last-child(3) /* hides the middle bar when animating to X*/ {
@@ -192,7 +192,7 @@ a:active i {
   margin: -100px 0 0 -28px;
   padding: 0 24px;
   padding-top: 100px;
-  background: #423e37;
+  background: #090805;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -319,8 +319,8 @@ a:active i {
 .resume-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #423e37;
-  color: #fbf9ff;
+  background-color: #090805;
+  color: #f6f7fa;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -456,8 +456,8 @@ a:active i {
 
 .tools {
   padding: 5px 10px;
-  background-color: #423e37;
-  color: #fbf9ff;
+  background-color: #090805;
+  color: #f6f7fa;
   border: none;
   border-radius: 8px;
 }
@@ -482,8 +482,8 @@ a:active i {
   text-transform: uppercase;
   font-size: 8px;
   text-align: center;
-  background-color: #423e37;
-  color: #fbf9ff;
+  background-color: #090805;
+  color: #f6f7fa;
   padding: 16px;
   margin-top: 24px;
 }
@@ -727,10 +727,3 @@ a:active i {
     margin-top: 58px;
   }
 }
-
-/* ==================== TODO ====================
-- build backend and use PHP to loop database to generate resume and projects sections
-- add resume section, displayed via pulling from a .json file;
-- change project cards' full-displayed to modals;
-- potentially switch to react and/or rebuild?;
-*/
