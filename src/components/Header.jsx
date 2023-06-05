@@ -13,19 +13,19 @@ export default function Header() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <hr class="nav-division" />
+              <hr className="nav-division" />
             </li>
             <li>
               <a href="#about">About</a>
             </li>
             <li>
-              <hr class="nav-division" />
+              <hr className="nav-division" />
             </li>
             <li>
               <a href="#education">Education</a>
             </li>
             <li>
-              <hr class="nav-division" />
+              <hr className="nav-division" />
             </li>
             <li>
               <a href="#projects">Projects</a>
