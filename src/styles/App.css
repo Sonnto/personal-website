@@ -348,9 +348,6 @@ a:active i {
 }
 
 .institute-container {
-  /* text-align: left; */
-  /* font-family: "Mulish";
-  font-weight: 200; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -377,26 +374,10 @@ a:active i {
 }
 
 .institute-name {
-  /* border: solid 0.5px black; */
-  /* width: 50px; */
   font-size: 16px;
   font-family: "Mulish";
   font-weight: 500;
 }
-/* 
-.experience-type {
-  font-size: 28px;
-  font-family: "Mulish";
-  font-weight: 500;
-  margin: 32px 0;
-  text-align: center;
-}
-
-.experience-name {
-  font-size: 24px;
-  font-family: "Mulish";
-  font-weight: 500;
-} */
 
 /* ==================== PROJECTS ==================== */
 
@@ -429,20 +410,7 @@ a:active i {
   border-radius: 20px;
   margin: 16px;
 }
-/*
-.project-description {
-    font-family: "Mulish";
-    font-weight: 200;
-    margin: 16px 24px;
-    line-height: 24px;
-    font-size: 16px;
-    text-align: justify;
-}
 
-.project-description p {
-    margin: 0;
-}
-*/
 .tools-container {
   display: flex;
   flex-wrap: wrap;
@@ -477,6 +445,8 @@ a:active i {
 .fa-arrow-up-right-from-square {
   padding: 0 4px;
 }
+
+/* ==================== SKILLS ==================== */
 
 /* ==================== FOOTER ==================== */
 #footer {
@@ -565,11 +535,6 @@ a:active i {
   .education-container {
     margin: 0 58px;
   }
-
-  /* .experience-type {
-    font-size: 36px;
-    margin: 32px 0;
-  } */
 
   .institute-card {
     height: 280px;
@@ -709,10 +674,6 @@ a:active i {
   /* === PROJECT ITEM CARDS === */
   .project-card-item {
     flex-basis: 47%;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-between; */
   }
 
   .project-media-icon {
