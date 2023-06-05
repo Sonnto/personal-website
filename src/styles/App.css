@@ -340,7 +340,7 @@ a:active i {
   background-color: #aba8a8;
 }
 
-/* ==================== EDUCATION/RESUME ==================== */
+/* ==================== EDUCATION ==================== */
 
 .education-container {
   text-align: center;
@@ -360,19 +360,20 @@ a:active i {
 .institute-card {
   display: flex;
   flex-direction: column;
-  /* border: solid 5px #3581b8; */
   height: 200px;
   width: 200px;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .institute-emblem {
-  height: 100px;
-  width: 100px;
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 20%;
   overflow: hidden;
   border: 0.5px solid rgba(222, 222, 222, 0.5);
+  object-fit: cover;
 }
 
 .institute-name {
@@ -559,7 +560,7 @@ a:active i {
     border-radius: 16px;
   }
 
-  /* ==================== TABLET 769px EDUCATION/RESUME ==================== */
+  /* ==================== TABLET 769px EDUCATION ==================== */
 
   .education-container {
     margin: 0 58px;
@@ -636,7 +637,7 @@ a:active i {
 @media screen and (min-width: 1025px) {
   #home,
   #about,
-  #resume,
+  #education,
   #projects {
     max-width: 1440px;
     margin: auto;
@@ -692,7 +693,7 @@ a:active i {
     padding: 0 4px; /* center the mobile icon under the envelope icon */
   }
 
-  /* ==================== DESKTOP 1025px EDUCATION/RESUME ==================== */
+  /* ==================== DESKTOP 1025px EDUCATION ==================== */
 
   .education-container {
     font-size: 20px;
