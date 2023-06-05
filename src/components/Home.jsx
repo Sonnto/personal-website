@@ -1,3 +1,5 @@
+import AnimatedTitle from "./AnimatedTitle";
+
 export default function Home() {
   return (
     <>
@@ -8,9 +10,7 @@ export default function Home() {
           alt="Placeholder emblem for website."
         />
       </div>
-      <h1 className="main-title">
-        Full-Stack<span className="next-line">Developer</span>
-      </h1>
+      <AnimatedTitle />
       <div className="subtext">
         <p>Front-End • Back-End</p>
         <p>UX • Design • UI</p>
