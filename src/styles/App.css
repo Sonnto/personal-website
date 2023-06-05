@@ -251,6 +251,10 @@ a:active i {
   margin: 16px 24px 0 24px;
 }
 
+/* ======== ANIMATED TITLE ======== */
+
+/* ======= ANIMATED TITLE ======== */
+
 .subtext {
   font-family: "Mulish";
   font-weight: 200;
@@ -352,8 +356,6 @@ a:active i {
   justify-content: space-evenly;
   margin: 32px 0px;
 }
-
-/* NEW */
 
 .institute-card {
   display: flex;
