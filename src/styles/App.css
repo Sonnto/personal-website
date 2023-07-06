@@ -365,8 +365,8 @@ a:active i {
 }
 
 .institute-emblem {
-  max-height: 100%;
-  max-width: 100%;
+  height: 144px;
+  width: 144px;
   border-radius: 20%;
   overflow: hidden;
   border: 0.5px solid rgba(222, 222, 222, 0.5);
@@ -542,8 +542,8 @@ a:active i {
   }
 
   .institute-emblem {
-    height: 200px;
-    width: 200px;
+    height: 212px;
+    width: 212px;
     border-radius: 25%;
   }
 
