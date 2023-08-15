@@ -2,7 +2,10 @@ export default function About({ data }) {
   const mailToEmail = `mailto:${data.email}`;
   const telMobileNum = `tel:${data.mobileNum}`;
   const viewResume = () => {
-    window.open("./assets/documents/CV_HoKeeFungAnthony.pdf", "_blank");
+    window.open(
+      "./assets/documents/CV_HoKeeFungAnthony_Dev_FULL.pdf",
+      "_blank"
+    );
   };
 
   return (
