@@ -283,7 +283,7 @@ a:active i {
 
 .bio {
   font-family: "Mulish";
-  text-align: justify;
+  text-align: left;
   line-height: 32px;
   font-size: 16px;
 }
@@ -337,7 +337,7 @@ a:active i {
   display: flex;
   flex-flow: row wrap;
   gap: 24px;
-  margin: 24px;
+  margin: 24px 24px 0 24px;
 }
 
 /* === PROJECT ITEM CARDS === */
@@ -405,8 +405,8 @@ a:active i {
 .contact-info {
   font-family: "Mulish";
   width: fit-content;
-  margin: 0 auto;
-  text-align: center;
+  margin: 24px auto 0 auto;
+  text-align: left;
   font-size: 16px;
 }
 
@@ -416,6 +416,12 @@ a:active i {
 
 .fa-mobile-alt {
   padding: 0 3px; /* center the mobile icon under the envelope icon*/
+}
+
+.cv-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
 }
 
 .cv-button {

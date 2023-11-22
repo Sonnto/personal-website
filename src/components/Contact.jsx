@@ -27,13 +27,15 @@ export default function Contact({ data }) {
             &nbsp;&nbsp;&nbsp;{data.mobileNum}
           </a>
         </p>
-        <button
-          className="cv-button"
-          aria-label="View Anthony's CV in a new tab"
-          onClick={viewCV}
-        >
-          View CV
-        </button>
+        <div className="cv-button-container">
+          <button
+            className="cv-button"
+            aria-label="View Anthony's CV in a new tab"
+            onClick={viewCV}
+          >
+            View CV
+          </button>
+        </div>
       </div>
     </>
   );
