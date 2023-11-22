@@ -30,19 +30,11 @@ h4 {
   box-sizing: inherit;
 }
 
-#division {
-  margin: 80px auto;
-  border-radius: 50%;
-  max-width: 80%;
-}
-
 .section-heading {
   font-weight: 700;
   font-size: 32px;
   text-align: center;
-  text-transform: uppercase;
   line-height: 44px;
-  letter-spacing: 8px;
   margin: 0;
 }
 
@@ -208,7 +200,6 @@ a:active i {
   text-align: center;
   margin: 16px 0px;
   font-size: 20px;
-  text-transform: uppercase;
   width: 100%;
 }
 
@@ -221,34 +212,36 @@ a:active i {
   transform: none;
 }
 
+.home-container,
+.about-container,
+.education-container,
+.projects-container {
+  padding: 40px 0;
+}
+
 /* ==================== HOME ==================== */
 
 .home-container {
   text-align: center;
-  padding: 0;
-}
-
-/* .emblem-overlay {
-  display: block;
-  position: absolute;
-  top: 47px;
-  left: 66px;
-  padding: 120px;
-  border: 1px solid red;
-} */
-
-.emblem {
-  margin: 48px 0 0 0;
-  max-width: 240px; /* 12.5em */
-  max-height: 240px; /* 12.5em */
 }
 
 .main-title {
   font-size: 48px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin: 16px 24px 0 24px;
+  margin: 0 62px;
+  padding-top: 20px;
+}
+
+.emblem-item {
+  margin: 28px 62px;
+}
+
+.emblem {
+  max-width: 240px; /* 12.5em */
+  max-height: 240px; /* 12.5em */
+  overflow: hidden;
+  border: 1px solid rgba(222, 222, 222, 0.5);
+  border-radius: 40px;
 }
 
 /* ======== ANIMATED TITLE ======== */
@@ -258,10 +251,9 @@ a:active i {
 .subtext {
   font-family: "Mulish";
   font-weight: 200;
-  margin: 8px 24px 16px 24px;
+  margin: 28px 62px;
   font-size: 20px;
   line-height: 32px;
-  text-transform: uppercase;
 }
 
 .subtext p {
@@ -273,20 +265,19 @@ a:active i {
   display: flex;
   justify-content: center;
   gap: 36px;
+  margin: 0px 62px;
 }
 
 /* ==================== ABOUT ==================== */
+
+.about-container {
+  margin: 0 62px;
+}
 
 .about-content-container {
   display: flex;
   flex-flow: column wrap;
   text-align: center;
-  margin: 0 32px;
-  gap: 32px;
-}
-
-.desktop-sect-heading {
-  display: none;
 }
 
 .profile-pic {
@@ -308,7 +299,7 @@ a:active i {
   font-family: "Mulish";
   width: fit-content;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   font-size: 16px;
 }
 
@@ -317,10 +308,10 @@ a:active i {
 }
 
 .fa-mobile-alt {
-  padding: 0 3px; /* center the mobile icon under the envelope icon */
+  padding: 0 3px; /* center the mobile icon under the envelope icon*/
 }
 
-.resume-button {
+.cv-button {
   display: inline-block;
   padding: 10px 20px;
   background-color: #090805;
@@ -332,11 +323,11 @@ a:active i {
   transition: background-color 0.3s ease;
 }
 
-.resume-button:hover {
+.cv-button:hover {
   background-color: #cadbee;
 }
 
-.resume-button:active {
+.cv-button:active {
   background-color: #aba8a8;
 }
 
@@ -344,14 +335,14 @@ a:active i {
 
 .education-container {
   text-align: center;
-  margin: 0px 32px;
+  margin: 0px 62px;
 }
 
 .institute-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 32px 0px;
+  padding-top: 32px;
 }
 
 .institute-card {
@@ -467,8 +458,15 @@ a:active i {
 
 @media screen and (min-width: 769px) {
   .section-heading {
-    font-size: 44px;
+    font-size: 52px;
     line-height: 48px;
+  }
+
+  .home-container,
+  .about-container,
+  .education-container,
+  .projects-container {
+    padding: 80px 0;
   }
 
   /* ==================== TABLET 769px HOME ==================== */
@@ -480,14 +478,13 @@ a:active i {
 
   .main-title {
     font-size: 64px;
-    letter-spacing: 12px;
     margin: 24px 32px 0 32px;
   }
 
   .subtext {
     font-size: 24px;
     line-height: 40px;
-    margin: 16px 32px 28px 32px;
+    margin: 28px 32px;
   }
 
   .social-icons {
@@ -498,13 +495,7 @@ a:active i {
   /* ==================== TABLET 769px ABOUT ==================== */
 
   .about-content-container {
-    margin: 32px 58px;
-  }
-
-  .profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 80px;
+    padding: 40px 140px 0 140px;
   }
 
   .bio {
@@ -524,7 +515,7 @@ a:active i {
     padding: 0 3.5px; /* center the mobile icon under the envelope icon */
   }
 
-  .resume-button {
+  .cv-button {
     font-size: 20px;
     padding: 14px 24px;
     border-radius: 16px;
@@ -532,8 +523,9 @@ a:active i {
 
   /* ==================== TABLET 769px EDUCATION ==================== */
 
-  .education-container {
-    margin: 0 58px;
+  .institute-container {
+    padding-top: 40px;
+    margin-top: 40px;
   }
 
   .institute-card {
@@ -555,7 +547,8 @@ a:active i {
 
   .projects-content-container {
     gap: 32px;
-    margin: 24px 58px 58px 58px;
+    margin: 40px 62px 80px 62px;
+    padding: 40px 62px;
   }
 
   /* === PROJECT ITEM CARDS === */
@@ -612,8 +605,7 @@ a:active i {
 
   #menu {
     width: 288px;
-    padding: 0 64px;
-    padding-top: 100px;
+    padding: 100px 64px 0 64px;
   }
 
   #menu li {
@@ -623,31 +615,21 @@ a:active i {
 
   /* ==================== DESKTOP 1025px HOME ==================== */
 
+  .home-container {
+    padding: 0;
+  }
+
+  .main-title {
+    margin: 0 32px;
+    padding-top: 28px;
+  }
+
   /* ==================== DESKTOP 1025px ABOUT ==================== */
 
   .about-content-container {
-    flex-flow: row;
     align-items: center;
-    margin: 32px 58px;
-    gap: 58px;
-  }
-
-  .mobile-sect-heading {
-    display: none;
-  }
-
-  .desktop-sect-heading {
-    display: block;
-  }
-
-  .profile-pic {
-    width: 400px;
-    height: 400px;
-    border-radius: 80px;
-  }
-
-  .contact-info {
-    margin: 32px 32px 32px 0;
+    margin: 20px 62px 0 62px;
+    text-align: center;
   }
 
   .contact-info i {
@@ -666,8 +648,13 @@ a:active i {
 
   /* ==================== DESKTOP 1025px PROJECTS ==================== */
 
+  .projects-container {
+    padding-bottom: 0;
+  }
+
   .projects-content-container {
-    margin: 32px 58px 58px 58px;
+    margin-top: 40px;
+    margin-bottom: 0;
     justify-content: space-evenly;
   }
 
