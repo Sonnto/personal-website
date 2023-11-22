@@ -30,6 +30,12 @@ export default function Header() {
             <li>
               <a href="#projects">Projects</a>
             </li>
+            <li>
+              <hr className="nav-division" />
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>

@@ -215,7 +215,8 @@ a:active i {
 .home-container,
 .about-container,
 .education-container,
-.projects-container {
+.projects-container,
+.contact-container {
   padding: 40px 0;
 }
 
@@ -232,11 +233,11 @@ a:active i {
   padding-top: 20px;
 }
 
-.emblem-item {
+.profile-image-item {
   margin: 28px 62px;
 }
 
-.emblem {
+.profile-image {
   max-width: 240px; /* 12.5em */
   max-height: 240px; /* 12.5em */
   overflow: hidden;
@@ -280,14 +281,6 @@ a:active i {
   text-align: center;
 }
 
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border: 1px solid rgba(222, 222, 222, 0.5);
-  border-radius: 40px;
-}
-
 .bio {
   font-family: "Mulish";
   text-align: justify;
@@ -295,40 +288,8 @@ a:active i {
   font-size: 16px;
 }
 
-.contact-info {
-  font-family: "Mulish";
-  width: fit-content;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 16px;
-}
-
-.contact-info i {
-  font-size: 24px;
-}
-
-.fa-mobile-alt {
-  padding: 0 3px; /* center the mobile icon under the envelope icon*/
-}
-
-.cv-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #090805;
-  color: #f6f7fa;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.cv-button:hover {
-  background-color: #cadbee;
-}
-
-.cv-button:active {
-  background-color: #aba8a8;
+.bio p {
+  margin-bottom: 0;
 }
 
 /* ==================== EDUCATION ==================== */
@@ -439,6 +400,44 @@ a:active i {
 
 /* ==================== SKILLS ==================== */
 
+/* ==================== CONTACT ==================== */
+
+.contact-info {
+  font-family: "Mulish";
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.contact-info i {
+  font-size: 24px;
+}
+
+.fa-mobile-alt {
+  padding: 0 3px; /* center the mobile icon under the envelope icon*/
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #090805;
+  color: #f6f7fa;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #cadbee;
+}
+
+.cv-button:active {
+  background-color: #aba8a8;
+}
+
 /* ==================== FOOTER ==================== */
 #footer {
   font-family: "Mulish";
@@ -465,13 +464,14 @@ a:active i {
   .home-container,
   .about-container,
   .education-container,
-  .projects-container {
+  .projects-container,
+  .contact-container {
     padding: 80px 0;
   }
 
   /* ==================== TABLET 769px HOME ==================== */
 
-  .emblem {
+  .profile-image {
     max-width: 340px;
     max-height: 340px;
   }
@@ -503,24 +503,6 @@ a:active i {
     font-size: 20px;
   }
 
-  .contact-info {
-    font-size: 20px;
-  }
-
-  .contact-info i {
-    font-size: 28px;
-  }
-
-  .fa-mobile-alt {
-    padding: 0 3.5px; /* center the mobile icon under the envelope icon */
-  }
-
-  .cv-button {
-    font-size: 20px;
-    padding: 14px 24px;
-    border-radius: 16px;
-  }
-
   /* ==================== TABLET 769px EDUCATION ==================== */
 
   .institute-container {
@@ -547,8 +529,8 @@ a:active i {
 
   .projects-content-container {
     gap: 32px;
-    margin: 40px 62px 80px 62px;
-    padding: 40px 62px;
+    margin: 40px 62px 0 62px;
+    padding: 40px 62px 0 62px;
   }
 
   /* === PROJECT ITEM CARDS === */
@@ -584,6 +566,31 @@ a:active i {
     padding: 0 4.5px;
   }
 
+  /* ==================== TABLET 769px CONTACT ==================== */
+
+  .contact-content-container {
+    margin: 40px 62px;
+    padding: 40px 140px 0 140px;
+  }
+
+  .contact-info {
+    font-size: 20px;
+  }
+
+  .contact-info i {
+    font-size: 28px;
+  }
+
+  .fa-mobile-alt {
+    padding: 0 3.5px; /* center the mobile icon under the envelope icon */
+  }
+
+  .cv-button {
+    font-size: 20px;
+    padding: 14px 24px;
+    border-radius: 16px;
+  }
+
   /* ==================== TABLET 769px FOOTER ==================== */
   #footer {
     margin-top: 32px;
@@ -596,7 +603,8 @@ a:active i {
   #home,
   #about,
   #education,
-  #projects {
+  #projects,
+  #contact {
     max-width: 1440px;
     margin: auto;
   }
@@ -632,14 +640,6 @@ a:active i {
     text-align: center;
   }
 
-  .contact-info i {
-    font-size: 32px;
-  }
-
-  .fa-mobile-screen-button {
-    padding: 0 4px; /* center the mobile icon under the envelope icon */
-  }
-
   /* ==================== DESKTOP 1025px EDUCATION ==================== */
 
   .education-container {
@@ -647,10 +647,6 @@ a:active i {
   }
 
   /* ==================== DESKTOP 1025px PROJECTS ==================== */
-
-  .projects-container {
-    padding-bottom: 0;
-  }
 
   .projects-content-container {
     margin-top: 40px;
@@ -670,6 +666,16 @@ a:active i {
 
   .fa-arrow-up-right-from-square {
     padding: 0 5px;
+  }
+
+  /* ==================== DESKTOP 1025px CONTACT ==================== */
+
+  .contact-info i {
+    font-size: 32px;
+  }
+
+  .fa-mobile-screen-button {
+    padding: 0 4px; /* center the mobile icon under the envelope icon */
   }
 
   /* ==================== DESKTOP 1025px FOOTER ==================== */

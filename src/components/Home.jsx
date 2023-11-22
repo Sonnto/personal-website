@@ -1,13 +1,9 @@
 export default function Home() {
   return (
     <>
-      <h1 className="main-title">
-        Kee-Fung
-        <span className="next-line">Anthony Ho</span>
-      </h1>
-      <div className="emblem-item">
+      <div className="profile-image-item">
         <img
-          className="emblem"
+          className="profile-image"
           src="./assets/images/profile/anthony-side-profile.jpg"
           alt="Headshot of Anthony"
         />

@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Education from "./components/Education";
 import Project from "./components/Project";
+// import Tech from "./components/Tech";
+import Contact from "./components/Contact";
 import "./styles/App.css";
 
 export default function App() {
@@ -12,6 +14,7 @@ export default function App() {
   const [education, setEducation] = useState(null);
   const [projects, setProjects] = useState(null);
   const [tech, setTech] = useState(null);
+  const [contact, setContact] = useState(null);
 
   useEffect(() => {
     const fetchData = async (type, setter) => {
@@ -28,6 +31,7 @@ export default function App() {
     fetchData("education", setEducation);
     fetchData("projects", setProjects);
     fetchData("tech", setTech);
+    fetchData("contact", setContact);
   }, []);
 
   //About section
@@ -64,13 +68,27 @@ export default function App() {
   }
   */
 
+  //Contact section
+  //Contact data
+  let contactArray = [];
+  if (contact && contact.data) {
+    contactArray = contact.data.map((data) => (
+      <Contact key={data.id} data={data} />
+    ));
+  }
+
   return (
     <>
       <Header />
       <section id="home" className="home-container">
+        <h1 className="main-title">
+          Kee-Fung
+          <span className="next-line">Anthony Ho</span>
+        </h1>
         <Home />
       </section>
       <section id="about" className="about-container">
+        <h2 className="section-heading">About</h2>
         {aboutArray}
       </section>
       <section id="education" className="education-container">
@@ -80,6 +98,10 @@ export default function App() {
       <section id="projects" className="projects-container">
         <h2 className="section-heading">Projects</h2>
         <div className="projects-content-container">{projectArray}</div>
+      </section>
+      <section id="contact" className="contact-container">
+        <h2 className="section-heading">Contact</h2>
+        <div className="contact-content-container">{contactArray}</div>
       </section>
       <Footer />
     </>
