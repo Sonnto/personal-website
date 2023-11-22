@@ -14,8 +14,8 @@ export default function Home() {
       </div>
       <div className="subtext">
         <p>Political Scientist </p>
-        <p>Web Developer</p>
         <p>Legal Professional</p>
+        <p>Web Developer</p>
       </div>
       <div className="social-icons">
         <a
