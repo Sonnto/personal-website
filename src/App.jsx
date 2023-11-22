@@ -70,18 +70,13 @@ export default function App() {
       <section id="home" className="home-container">
         <Home />
       </section>
-      <hr id="division" />
       <section id="about" className="about-container">
         {aboutArray}
       </section>
-
-      <hr id="division" />
       <section id="education" className="education-container">
         <h2 className="section-heading">Alma Maters</h2>
         <div className="institute-container">{educationArray}</div>
       </section>
-
-      <hr id="division" />
       <section id="projects" className="projects-container">
         <h2 className="section-heading">Projects</h2>
         <div className="projects-content-container">{projectArray}</div>
