@@ -370,7 +370,7 @@ a:active i {
   justify-content: center;
   text-align: center;
   font-family: "Mulish";
-  font-weight: 200;
+  font-weight: 400;
   gap: 16px;
   margin: 16px 24px;
   font-size: 16px;
@@ -379,9 +379,10 @@ a:active i {
 
 .tools {
   padding: 5px 10px;
-  background-color: #090805;
-  color: #f6f7fa;
-  border: none;
+  color: #090805;
+  background-color: #cfdcee;
+  /* border: none; */
+  border: 1px solid black;
   border-radius: 8px;
 }
 
