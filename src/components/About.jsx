@@ -13,7 +13,9 @@ export default function About({ data }) {
       <h2 className="section-heading">About</h2>
       <div className="about-content-container">
         <div className="bio">
-          <p>{data.bio}</p>
+          {data.bio.split(";").map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
         <div className="contact-info">
           <p>
