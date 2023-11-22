@@ -2,10 +2,7 @@ export default function Contact({ data }) {
   const mailToEmail = `mailto:${data.email}`;
   const telMobileNum = `tel:${data.mobileNum}`;
   const viewCV = () => {
-    window.open(
-      "./assets/documents/CV_HoKeeFungAnthony_Dev_FULL.pdf",
-      "_blank"
-    );
+    window.open("./assets/documents/CV_HoKeeFungAnthony.pdf", "_blank");
   };
   return (
     <>
@@ -14,7 +11,7 @@ export default function Contact({ data }) {
           <i className="fas fa-envelope"></i>
           <a
             href={mailToEmail}
-            aria-label="Click to e-mail Anthony"
+            aria-label="Send Anthony an e-mail via his e-mail address"
             rel="noopener"
           >
             &nbsp;&nbsp;&nbsp;{data.email}
@@ -24,13 +21,17 @@ export default function Contact({ data }) {
           <i className="fas fa-mobile-alt"></i>
           <a
             href={telMobileNum}
-            aria-label="Click to call Anthony via his mobile phone number"
+            aria-label="Call Anthony via his mobile phone number"
             rel="noopener"
           >
             &nbsp;&nbsp;&nbsp;{data.mobileNum}
           </a>
         </p>
-        <button className="cv-button" onClick={viewCV}>
+        <button
+          className="cv-button"
+          aria-label="View Anthony's CV in a new tab"
+          onClick={viewCV}
+        >
           View CV
         </button>
       </div>
