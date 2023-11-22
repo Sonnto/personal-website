@@ -1,6 +1,16 @@
 {
   "data": [
     {
+      "id": 8,
+      "title": "We-Watch Redesign",
+      "url": null,
+      "urlTest": "https://we-watch.ca",
+      "slug": "we-watch-redesign",
+      "image": "./assets/images/previews/we-watch-redesign-preview.png",
+      "content": "A redesigned website for the legal tech startup, We-Watch. This project features a sleek and modern design, intuitive navigation, and a responsive layout. With a focus on user experience, I created a seamless and engaging experience that highlights the company's mission and services.",
+      "tools": "WordPress;PHP;HTML;CSS"
+    },
+    {
       "id": 1,
       "title": "Personal Website",
       "url": "https://github.com/Sonnto/personal-website",
@@ -8,7 +18,7 @@
       "slug": "personal-website",
       "image": "./assets/images/previews/personal-website-preview.png",
       "content": "This project elegantly showcases my diverse expertise, creative projects, and professional accomplishments. The website provides a seamless user experience with its sleek design and intuitive navigation.",
-      "tools": "CSS;HTML;React.js;Tailwind"
+      "tools": "CSS;HTML;React.js"
     },
     {
       "id": 2,
