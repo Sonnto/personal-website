@@ -11,7 +11,7 @@ export default function Contact({ data }) {
           <i className="fas fa-envelope"></i>
           <a
             href={mailToEmail}
-            aria-label="Send Anthony an e-mail via his e-mail address"
+            aria-label="E-mail Anthony via his e-mail address"
             rel="noopener"
           >
             &nbsp;&nbsp;&nbsp;{data.email}

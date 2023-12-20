@@ -9,31 +9,31 @@ export default function Home() {
         />
       </div>
       <div className="subtext">
-        <p>Political Scientist </p>
+        <p>Political Analyst </p>
         <p>Legal Professional</p>
         <p>Web Developer</p>
       </div>
       <div className="social-icons">
         <a
-          href="https://github.com/sonnto"
-          aria-label="Click for Anthony's GitHub account"
+          href="https://x.com/anthonykfho"
+          aria-label="Anthony's X account"
           rel="noopener"
         >
-          <i className="fab fa-github-square"></i>
+          <i className="fab fa-square-x-twitter"></i>
         </a>
         <a
           href="https://linkedin.com/in/anthonykfho"
-          aria-label="Click for Anthony's LinkedIn account"
+          aria-label="Anthony's LinkedIn account"
           rel="noopener"
         >
           <i className="fab fa-linkedin"></i>
         </a>
         <a
-          href="https://x.com/anthonykfho"
-          aria-label="Click for Anthony's X account"
+          href="https://github.com/sonnto"
+          aria-label="Anthony's GitHub account"
           rel="noopener"
         >
-          <i className="fab fa-square-x-twitter"></i>
+          <i className="fab fa-github-square"></i>
         </a>
       </div>
     </>
